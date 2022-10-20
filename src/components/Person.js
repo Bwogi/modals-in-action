@@ -7,6 +7,7 @@ import {
 	StarIcon,
 } from '@heroicons/react/20/solid';
 import ModalSuccess from './ModalSuccess';
+import ModalDeactivate from './ModalDeactivate';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
@@ -14,16 +15,19 @@ function classNames(...classes) {
 
 export default function Person(props) {
 	const [paid, setPaid] = useState(false);
-
 	const paymentHandler = () => {
 		setPaid(true);
+	};
+	const [deactivate, setDeactivate] = useState(false);
+	const activationHandler = () => {
+		setDeactivate(true);
 	};
 	// const buttonHandler = () => {
 	// 	console.log(props.name);
 	// 	console.log(props.pic);
 	// };
 	return (
-		<div className='px-4 py-5 sm:px-6 rounded-md bg-gray-50 my-4 mx-4 drop-shadow-sm'>
+		<div className='px-4 py-5 text-center sm:px-6 rounded-md bg-gray-50 my-4 mb-[100px] mx-[100px] drop-shadow-sm'>
 			<div className='flex space-x-3'>
 				<div className='flex-shrink-0'>
 					<img className='h-10 w-10 rounded-full' src={props.pic} alt='' />
@@ -46,6 +50,13 @@ export default function Person(props) {
 						Process Payment
 					</button>
 					{paid ? <ModalSuccess name={props.name} /> : null}
+					<button
+						onClick={activationHandler}
+						className='text-sm bg-red-600 text-white px-4 ml-3 py-1 rounded-md my-4s '
+					>
+						Deactivate Account
+					</button>
+					{deactivate ? <ModalDeactivate /> : null}
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
 						necessitatibus! Recusandae rem voluptatibus suscipit fugiat

@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 
 function App() {
 	return (
-		<div className='App'>
+		<div>
 			{/* <Todo text='Hello world' />
 			<Todo text='this is a reactjs project' />
 			<Todo text='interesting stuff happening here' /> */}

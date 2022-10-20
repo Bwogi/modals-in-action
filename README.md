@@ -1,6 +1,6 @@
 # Modals in a react app
-## My gist that summerises this process
-[Gist where all the summary of this process can be found.](https://gist.github.com/Bwogi/12e64205614b1b2228634d09f1e21eef)
+## My gist that summarises this process
+[Gist where I summarise this process.](https://gist.github.com/Bwogi/12e64205614b1b2228634d09f1e21eef)
 
 ## Screenshots
 <img width="1440" alt="Screen Shot 2022-10-19 at 8 43 24 PM" src="https://user-images.githubusercontent.com/2015836/196851968-89d7fe34-0dd7-43cb-b946-aa758bdc14a4.png">

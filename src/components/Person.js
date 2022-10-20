@@ -49,14 +49,16 @@ export default function Person(props) {
 					>
 						Process Payment
 					</button>
-					{paid ? <ModalSuccess name={props.name} /> : null}
+					{/* {paid ? <ModalSuccess name={props.name} /> : null} */}
+					{paid && <ModalSuccess name={props.name} />}
 					<button
 						onClick={activationHandler}
 						className='text-sm bg-red-600 text-white px-4 ml-3 py-1 rounded-md my-4s '
 					>
 						Deactivate Account
 					</button>
-					{deactivate ? <ModalDeactivate /> : null}
+					{/* {deactivate ? <ModalDeactivate /> : null} */}
+					{deactivate && <ModalDeactivate />}
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
 						necessitatibus! Recusandae rem voluptatibus suscipit fugiat

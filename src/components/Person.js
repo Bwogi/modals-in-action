@@ -27,7 +27,7 @@ export default function Person(props) {
 	// 	console.log(props.pic);
 	// };
 	return (
-		<div className='px-4 py-5 text-center sm:px-6 rounded-md bg-gray-50 my-4 mb-[100px] mx-[100px] drop-shadow-sm'>
+		<div className='px-4 py-5 text-center sm:px-6 rounded-md bg-gradient-to-r from-white to-gray-500 ... my-[50px] mx-[100px] drop-shadow-3xl'>
 			<div className='flex space-x-3'>
 				<div className='flex-shrink-0'>
 					<img className='h-10 w-10 rounded-full' src={props.pic} alt='' />
@@ -59,7 +59,7 @@ export default function Person(props) {
 					</button>
 					{/* {deactivate ? <ModalDeactivate /> : null} */}
 					{deactivate && <ModalDeactivate />}
-					<p>
+					<p className='mt-3'>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
 						necessitatibus! Recusandae rem voluptatibus suscipit fugiat
 						explicabo numquam maiores nihil accusamus aliquid, molestiae earum
